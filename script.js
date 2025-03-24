@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
   displayAllRecipes();
 
   const form = document.getElementById('saveRecipe');
-  form.addEventListener('submit', handleFormSubmit());
+  form.addEventListener('submit', handleFormSubmit);
 
   document.getElementById('recipeName').focus();
 });
