@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Mid-term - Recipe App with data saved to the browser's with LocalStorage
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" defer src="script.js"></script>
+  </head>
+  <body>
+    <h2>Add Recipe</h2>
+    <form action="https://invalid-server.com" method="POST" id="saveRecipe">
+      <fieldset>
+        <label for="recipeName">Name:</label><br />
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter recipe name"
+          id="recipeName"
+        />
+        <br /><br />
+        <label for="recipeIngredients">Ingredients:</label><br />
+        <textarea
+          rows="5"
+          cols="33"
+          name="ingredients"
+          placeholder="Enter a comma seperated list of at least 3 ingredients"
+          id="recipeIngredients"
+        ></textarea>
+        <br /><br />
+        <input type="submit" value="Save Recipe" />
+        <input type="reset" value="Clear Form" />
+      </fieldset>
+    </form>
+
+    <!-- Display a list of saved recipes in the section element with id recipeList -->
+    <h2>Saved Recipes</h2>
+    <section class="recipe-list" id="recipeList">
+      <!-- Below is an HTML template of a saved recipe -->
+
+      <!-- <div class="recipe">
+        <h3>Chicken Soup</h3>
+        <ul>
+          <li>carrots</li>
+          <li>beans</li>
+          <li>onions</li>
+          <li>chicken stock</li>
+        </ul>
+      </div> -->
+    </section>
+  </body>
+</html>
